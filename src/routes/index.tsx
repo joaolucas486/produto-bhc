@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
-  Search, User, ShoppingBag, Menu, X, Star, Shield, Truck,
+  Search, User, ShoppingBag, Menu, X, Shield, Truck,
   CreditCard, Headphones, ChevronDown, MessageCircle, Sparkles, Heart,
 } from "lucide-react";
 import img1 from "@/assets/img1.jpg.asset.json";
