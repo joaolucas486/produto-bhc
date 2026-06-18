@@ -144,17 +144,6 @@ function Hero() {
               <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
             </a>
           </div>
-          <div className="mt-10 flex items-center gap-6">
-            <div className="flex -space-x-2">
-              {[1,2,3,4].map(i => <div key={i} className="h-8 w-8 rounded-full border-2 border-background bg-gradient-to-br from-primary/40 to-gold/40" />)}
-            </div>
-            <div>
-              <div className="flex items-center gap-0.5 text-gold">
-                {[...Array(5)].map((_, i) => <Star key={i} className="h-3.5 w-3.5 fill-current" />)}
-              </div>
-              <p className="text-xs text-muted-foreground">+12 mil clientes satisfeitas</p>
-            </div>
-          </div>
         </div>
         <div className="relative flex justify-center">
           <div className="absolute inset-0 grid place-items-center">
