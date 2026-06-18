@@ -130,7 +130,7 @@ function Hero() {
           </span>
           <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Beleza, cuidado <br />
-            <span className="bg-gradient-primary bg-clip-text text-transparent">e confiança</span>
+            <span className="text-primary">e confiança</span>
             <br />em cada detalhe.
           </h1>
           <p className="mt-6 max-w-lg text-base text-muted-foreground sm:text-lg">
@@ -327,35 +327,6 @@ function Trust() {
   );
 }
 
-function Testimonials() {
-  const items = [
-    { name: "Júlia M.", text: "Embalagem linda, chegou rápido e o atendimento foi maravilhoso. Já virei cliente fiel." },
-    { name: "Renata S.", text: "Comprei o kit completo, amei a apresentação dos produtos. Visual super premium." },
-    { name: "Camila A.", text: "Site fácil de navegar e checkout simples. Recomendo sem medo, recebi tudo certinho." },
-  ];
-  return (
-    <section className="bg-gradient-to-b from-background to-blush/40 py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">Depoimentos</p>
-          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">O que dizem sobre a BHC</h2>
-        </div>
-        <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
-          {items.map(i => (
-            <div key={i.name} className="rounded-3xl border border-border bg-card p-6 shadow-card transition hover:-translate-y-1 hover:shadow-soft">
-              <div className="flex gap-0.5 text-gold">{[...Array(5)].map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}</div>
-              <p className="mt-4 text-sm leading-relaxed text-foreground/80">"{i.text}"</p>
-              <div className="mt-5 flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary/40 to-gold/40" />
-                <div className="text-sm font-semibold">{i.name}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -527,7 +498,6 @@ function Home() {
         <Featured onBuy={handleBuy} />
         <Grid id="mais-vendidos" eyebrow="Top vendas" title="Mais vendidos" items={bestSellers} onView={setSelected} onBuy={handleBuy} />
         <Trust />
-        <Testimonials />
         <FAQ />
       </main>
       <Footer />
