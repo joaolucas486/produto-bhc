@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
-  Search, User, ShoppingBag, Menu, X, Star, Shield, Truck,
+  Search, User, ShoppingBag, Menu, X, Shield, Truck,
   CreditCard, Headphones, ChevronDown, MessageCircle, Sparkles, Heart,
 } from "lucide-react";
 import img1 from "@/assets/img1.jpg.asset.json";
@@ -143,17 +143,6 @@ function Hero() {
             <a href="https://wa.me/5500000000000" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-background/80 px-7 py-3.5 text-sm font-semibold text-primary backdrop-blur transition hover:bg-primary hover:text-primary-foreground">
               <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
             </a>
-          </div>
-          <div className="mt-10 flex items-center gap-6">
-            <div className="flex -space-x-2">
-              {[1,2,3,4].map(i => <div key={i} className="h-8 w-8 rounded-full border-2 border-background bg-gradient-to-br from-primary/40 to-gold/40" />)}
-            </div>
-            <div>
-              <div className="flex items-center gap-0.5 text-gold">
-                {[...Array(5)].map((_, i) => <Star key={i} className="h-3.5 w-3.5 fill-current" />)}
-              </div>
-              <p className="text-xs text-muted-foreground">+12 mil clientes satisfeitas</p>
-            </div>
           </div>
         </div>
         <div className="relative flex justify-center">
