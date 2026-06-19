@@ -64,8 +64,8 @@ function Logo({ className = "" }: { className?: string }) {
         <Sparkles className="h-5 w-5 text-primary-foreground" />
       </div>
       <div className="leading-none">
-        <div className="font-display text-xl font-bold tracking-tight text-foreground">BHC</div>
-        <div className="text-[10px] uppercase tracking-[0.2em] text-gold">Beauty</div>
+        <div className="font-display text-xl font-bold tracking-tight text-foreground">by-Karla</div>
+        <div className="text-[10px] uppercase tracking-[0.2em] text-gold">mentora</div>
       </div>
     </a>
   );
